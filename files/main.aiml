@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<!--<category>-->
+<!--    <pattern><set>whereis</set><set>places</set></pattern>-->
+<!--        <template>-->
+<!--            <map name="location"><star index="2" /></map>-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern><set>whereis</set><set>places</set> *</pattern>-->
+<!--        <template>-->
+<!--            <srai><set>whereis</set><set>places</set></srai>-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>* <set>whereis</set><set>places</set> *</pattern>-->
+<!--        <template>-->
+<!--            <srai><set>whereis</set><set>places</set></srai>-->
+<!--        </template>-->
+<!--</category>-->
+
+
+
+<!--<category>-->
+<!--    <pattern><set>whereis</set> *</pattern>-->
+<!--        <template>-->
+<!--            I do not know where <first><star index="2" /></first> is-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern><set>whereis</set> * *</pattern>-->
+<!--        <template>-->
+<!--            I do not know where <first><star index="2" /></first> is-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>* <set>whereis</set> * *</pattern>-->
+<!--        <template>-->
+<!--            I do not know where <first><star index="3" /></first> is-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>WHY NOT</pattern>-->
+<!--    <that>I DO NOT KNOW WHERE * IS</that>-->
+<!--        <template>Because I do not have a category to connect me to a mapping service</template>-->
+<!--</category>-->
+
+
+
+<!--<category>-->
+<!--    <pattern><set>whatis</set><set>places</set></pattern>-->
+<!--        <template>-->
+<!--            <map name="locationinfo"><star index="2" /></map>-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>WHERE IS IT</pattern>-->
+<!--    <that>* IS A CITY</that>-->
+<!--        <template>-->
+<!--            <map name="location"><thatstar/></map>-->
+<!--        </template>-->
+<!--</category>-->
+
+
+
+<!--<category>-->
+<!--    <pattern>* <set>pop</set><set>places</set></pattern>-->
+<!--        <template>-->
+<!--            <map name="population"><star index="3" /></map>-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>* <set>pop</set> *</pattern>-->
+<!--        <template>-->
+<!--            I do not know what the population of <star index="3" /> is-->
+<!--        </template>-->
+<!--</category>-->
+
+<!--<category>-->
+<!--    <pattern>WHY NOT</pattern>-->
+<!--    <that>I DO NOT KNOW WHAT THE POPULATION OF * IS</that>-->
+<!--        <template>-->
+<!--            Because it is too hard to count the residents of <thatstar/>-->
+<!--        </template>-->
+<!--</category>-->
+
+
+
+<!--<category>-->
+<!--    <pattern>*</pattern>-->
+<!--    <template>I do not have an answer for that</template>-->
+<!--</category>-->
+
+</aiml>
