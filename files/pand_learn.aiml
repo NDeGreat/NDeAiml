@@ -7,10 +7,10 @@
         <pattern>LOCATION *</pattern>
         <template>
             <think>
-                <set name="places"><star /></set>
+                <set name="places"><star/></set>
             </think> 
             <condition name="places">
-                <li value="bristol">
+                <li value="Bristol">
                     <think><set name="whynot">nil</set></think>
                     <map name="location"><star/></map>
                 </li>
@@ -45,25 +45,23 @@
     <category>
         <pattern>LOCATIONINFO *</pattern>
         <template>
-            <think>
-                <set var="places"><star/></set>
-            </think>
-                <condition var="places">
-                    <li var="bristol">
+            <think><set name="places"><star /></set></think>
+                <condition name="places">
+                    <li value="bristol">
                         <map name="locationinfo"><star/></map>
                     </li>
-                    <li var="london">
+                    <li value="london">
                         <map name="locationinfo"><star/></map>
                     </li>
-                    <li var="bath">
+                    <li value="bath">
                         <map name="locationinfo"><star/></map>
                     </li>
-                    <li var="beauty">
+                    <li value="beauty">
                         <map name="locationinfo"><star/></map>
                     </li>
-                    <li var="uwe">
+                    <li value="uwe">
                         <srai>*</srai></li>
-                    <li>help</li>
+                    <li><srai>*</srai></li>
                 </condition>
         </template>
     </category>
