@@ -3,163 +3,163 @@
     
 <!--.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.FUNCTIONS.-->
 
-    <category>
-        <pattern>LOCATION *</pattern>
-        <template>
-            <think>
-                <set name="places"><star/></set>
-            </think> 
-            <condition name="places">
-                <li value="Bristol">
-                    <think><set name="whynot">nil</set></think>
-                    <map name="location"><star/></map>
-                </li>
-                <li value="london">
-                    <think><set name="whynot">nil</set></think>
-                    <map name="location"><star/></map>
-                </li>
-                <li value="bath">
-                    <think><set name="whynot">nil</set></think>
-                    <map name="location"><star/></map>
-                </li>
-                <li value="uwe">
-                    <think><set name="whynot">nil</set></think>
-                    <map name="location"><star/></map>
-                </li>
-                <li value="beauty">
-                    <think><set name="whynot">nil</set></think>
-                    <map name="location"><star/></map>
-                </li>
-                <li value="chatter">
-                    <think><set name="whynot">nil</set></think>
-                    <srai>*</srai>
-                </li>
-                <li>
-                    <think><set name="whynot">place</set></think>
-                    I do not know where <star/> is
-                </li>
-            </condition>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>LOCATION *</pattern>-->
+<!--        <template>-->
+<!--            <think>-->
+<!--                <set name="places"><star/></set>-->
+<!--            </think> -->
+<!--            <condition name="places">-->
+<!--                <li value="Bristol">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <map name="location"><star/></map>-->
+<!--                </li>-->
+<!--                <li value="london">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <map name="location"><star/></map>-->
+<!--                </li>-->
+<!--                <li value="bath">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <map name="location"><star/></map>-->
+<!--                </li>-->
+<!--                <li value="uwe">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <map name="location"><star/></map>-->
+<!--                </li>-->
+<!--                <li value="beauty">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <map name="location"><star/></map>-->
+<!--                </li>-->
+<!--                <li value="*">-->
+<!--                    <think><set name="whynot">nil</set></think>-->
+<!--                    <srai>*</srai>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <think><set name="whynot">place</set></think>-->
+<!--                    I do not know where <thinkstar/> is-->
+<!--                </li>-->
+<!--            </condition>-->
+<!--        </template>-->
+<!--    </category>-->
     
-    <category>
-        <pattern>LOCATIONINFO *</pattern>
-        <template>
-            <think><set name="places"><star /></set></think>
-                <condition name="places">
-                    <li value="bristol">
-                        <map name="locationinfo"><star/></map>
-                    </li>
-                    <li value="london">
-                        <map name="locationinfo"><star/></map>
-                    </li>
-                    <li value="bath">
-                        <map name="locationinfo"><star/></map>
-                    </li>
-                    <li value="beauty">
-                        <map name="locationinfo"><star/></map>
-                    </li>
-                    <li value="uwe">
-                        <srai>*</srai></li>
-                    <li><srai>*</srai></li>
-                </condition>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>LOCATIONINFO *</pattern>-->
+<!--        <template>-->
+<!--            <think><set name="places"><star /></set></think>-->
+<!--                <condition name="places">-->
+<!--                    <li value="bristol">-->
+<!--                        <map name="locationinfo"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="london">-->
+<!--                        <map name="locationinfo"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="bath">-->
+<!--                        <map name="locationinfo"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="beauty">-->
+<!--                        <map name="locationinfo"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="uwe">-->
+<!--                        <srai>*</srai></li>-->
+<!--                    <li><srai>*</srai></li>-->
+<!--                </condition>-->
+<!--        </template>-->
+<!--    </category>-->
     
-    <category>
-        <pattern>POPULATION *</pattern>
-        <template>
-            <think>
-                <set var="places"><star/></set>
-            </think>
-                <condition name="places">
-                    <li value="bristol">
-                        <think><set name="whynot">nil</set></think>
-                        <map name="population"><star/></map>
-                    </li>
-                    <li value="london">
-                        <think><set name="whynot">nil</set></think>
-                        <map name="population"><star/></map>
-                    </li>
-                    <li value="bath">
-                        <think><set name="whynot">nil</set></think>
-                        <map name="population"><star/></map>
-                    </li>
-                    <li value="uwe">
-                        <think><set name="whynot">nil</set></think>
-                        <map name="population"><star/></map>
-                    </li>
-                    <li value="beauty">
-                        <think><set name="whynot">nil</set></think>
-                        <map name="population"><star/></map>
-                    </li>
-                    <li value="chatter">
-                        <think><set name="whynot">nil</set></think>
-                        <srai>*</srai>
-                    </li>
-                    <li>
-                        <think><set name="whynot">population</set><set name="unknownplace"><star/></set></think>
-                        I do not know the population of <star/>
-                    </li>
-                </condition>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>POPULATION *</pattern>-->
+<!--        <template>-->
+<!--            <think>-->
+<!--                <set var="places"><star/></set>-->
+<!--            </think>-->
+<!--                <condition name="places">-->
+<!--                    <li value="bristol">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <map name="population"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="london">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <map name="population"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="bath">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <map name="population"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="uwe">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <map name="population"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="beauty">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <map name="population"><star/></map>-->
+<!--                    </li>-->
+<!--                    <li value="*">-->
+<!--                        <think><set name="whynot">nil</set></think>-->
+<!--                        <srai>*</srai>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <think><set name="whynot">population</set><set name="unknownplace"><star/></set></think>-->
+<!--                        I do not know the population of <thinkstar/>-->
+<!--                    </li>-->
+<!--                </condition>-->
+<!--        </template>-->
+<!--    </category>-->
     
 <!--.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.QUESTIONS.-->
     
-    <category>
-        <pattern>
-            # <set>whereis</set> ^
-        </pattern>
-        <template>
-            <srai>LOCATION <first><star index="3"/></first></srai>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>-->
+<!--            # <set>whereis</set> ^-->
+<!--        </pattern>-->
+<!--        <template>-->
+<!--            <srai>LOCATION <first><star index="3"/></first></srai>-->
+<!--        </template>-->
+<!--    </category>-->
         
-    <category>
-        <pattern>
-            ^ <set>whatis</set> ^
-        </pattern>
-        <template>
-            <srai>LOCATIONINFO <first><star index="3"/></first></srai>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>-->
+<!--            ^ <set>whatis</set> ^-->
+<!--        </pattern>-->
+<!--        <template>-->
+<!--            <srai>LOCATIONINFO <first><star index="3"/></first></srai>-->
+<!--        </template>-->
+<!--    </category>-->
     
-    <category>
-        <pattern>
-            # <set>pop</set> ^
-        </pattern>
-        <template>
-            <srai>POPULATION <first><star index="3"/></first></srai>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>-->
+<!--            # <set>pop</set> ^-->
+<!--        </pattern>-->
+<!--        <template>-->
+<!--            <srai>POPULATION <first><star index="3"/></first></srai>-->
+<!--        </template>-->
+<!--    </category>-->
     
 <!--.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.FOLLOWUP.-->
     
-    <category>
-        <pattern>$WHERE IS IT</pattern>
-        <that>* IS A CITY</that>
-            <template>
-                <map name="location"><thatstar/></map>
-            </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>$WHERE IS IT</pattern>-->
+<!--        <that>* IS A CITY</that>-->
+<!--            <template>-->
+<!--                <map name="location"><thatstar/></map>-->
+<!--            </template>-->
+<!--    </category>-->
     
-    <category>
-        <pattern>WHY NOT</pattern>
-        <template>
-            <condition name="whynot">
-                <li value="place">Because I do not have a category to connect me to a mapping service</li>
-                <li value="population">Because it is too hard to count the residents of <get name="unknownplace"/></li>
-                <li value="nil"><srai>*</srai></li>
-            </condition>
-        </template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>WHY NOT</pattern>-->
+<!--        <template>-->
+<!--            <condition name="whynot">-->
+<!--                <li value="place">Because I do not have a category to connect me to a mapping service</li>-->
+<!--                <li value="population">Because it is too hard to count the residents of <get name="unknownplace"/></li>-->
+<!--                <li value="nil"><srai>*</srai></li>-->
+<!--            </condition>-->
+<!--        </template>-->
+<!--    </category>-->
     
 <!--.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.UDC.-->
     
-    <category>
-        <pattern>*</pattern>
-        <template>I do not have an answer for that</template>
-    </category>
+<!--    <category>-->
+<!--        <pattern>*</pattern>-->
+<!--        <template>I do not have an answer for that</template>-->
+<!--    </category>-->
     
 </aiml>
